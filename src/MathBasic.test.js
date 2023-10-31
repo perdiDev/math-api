@@ -20,7 +20,7 @@ describe('A mathbasic', () => {
       expect(() => MathBasic.add(1, 2, 3, 4)).toThrowError();
     });
 
-    it('should return error when given non-number parametera', () => {
+    it('should return error when given non-number parameter', () => {
       expect(() => MathBasic.add('1', '2')).toThrowError();
       expect(() => MathBasic.add(true, {})).toThrowError();
       expect(() => MathBasic.add(null, false)).toThrowError();
